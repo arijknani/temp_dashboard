@@ -1,0 +1,35 @@
+<div>
+    <app-widget-area [data]="bigchart"></app-widget-area>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space between center" fxLayoutGap="20px" class="stats-cards" >
+    <mat-card fxFlex="25">
+        <app-widget-card label="First Value" total="12h"  [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Second Value" total="10k"  [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Third Value" total="10k"  [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Fourth Value" total="10k"  [data]="cards"></app-widget-card>
+    </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space between center" fxLayoutGap="20px">
+    <div fxFlex="40">
+        <app-widget-pie [data]="piechart"></app-widget-pie>
+    </div>
+    <div fxFlex="40">
+        <app-widget-drilldown [data]="drilldown"></app-widget-drilldown>
+    </div>
+    <div fxFlex="40">
+        <app-widget-datalabel [data]="datalabel"></app-widget-datalabel>
+    </div>
+</div>
